@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.LoginController"
+            prefWidth="400" prefHeight="400"
+            style="-fx-background-color: linear-gradient(to bottom, #e0eafc, #cfdef3);">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="50" prefWidth="300" prefHeight="300" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50">
+        <Label text="Bienvenido" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+        <VBox spacing="10" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 4);">
+            <TextField fx:id="txtUsuario" promptText="Usuario" style="-fx-background-radius: 6; -fx-border-radius: 6;" />
+            <PasswordField fx:id="txtContrasena" promptText="Contraseña" style="-fx-background-radius: 6; -fx-border-radius: 6;" />
+
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Ingresar" onAction="#handleLogin" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 6;" />
+                <Button text="Registrarse" onAction="#handleRegister" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 6;" />
+            </HBox>
+
+            <Label fx:id="lblMensaje" textFill="red" wrapText="true" style="-fx-font-size: 12px;"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

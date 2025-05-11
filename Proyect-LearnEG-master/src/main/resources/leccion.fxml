@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.LeccionController"
+            prefWidth="800" prefHeight="600"
+            style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3);">
+
+    <VBox alignment="CENTER" spacing="20"
+          AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100"
+          AnchorPane.topAnchor="100" AnchorPane.bottomAnchor="100"
+          style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 15;
+                 -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);">
+
+        <Label text="🧠 Traduce la palabra:" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+        <Label fx:id="lblPalabraIngles" text="(Palabra en inglés)"
+               style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #0077cc;" />
+
+        <TextField fx:id="txtTraduccion" promptText="Escribe la traducción aquí" maxWidth="300"
+                   style="-fx-font-size: 16px; -fx-background-radius: 8; -fx-padding: 10;" />
+
+        <Button text="Validar"
+                onAction="#validarRespuesta"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white;
+                       -fx-font-size: 14px; -fx-padding: 8 16; -fx-background-radius: 10;" />
+
+        <Label fx:id="lblResultado" text=" "
+               style="-fx-font-size: 16px; -fx-text-fill: #333;" />
+
+        <Button text="Siguiente palabra"
+                onAction="#cargarNuevaPalabra"
+                style="-fx-background-color: #2196F3; -fx-text-fill: white;
+                       -fx-font-size: 14px; -fx-padding: 8 16; -fx-background-radius: 10;" />
+    </VBox>
+</AnchorPane>

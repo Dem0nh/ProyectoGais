@@ -1,0 +1,27 @@
+DONE:
+  Nicolás:
+  - Creación de modelos básicos (palabra, usuario, progreso, intento )
+  - Creación de acciones DAO de cada uno - Conexión a la base de datos en el servidor mediante un túnel de SSH 
+  - Un DataBaseSetup para que no haya problemas al iniciar la conexión con la base de datos 
+  - Base del front-end utilizando FXML con javaFAX (Posiblemente sea modificado en un futuro) 
+  
+  
+  Mora: 
+  - Creación del servidor utilizando Linux (o no sé qué hizo) 
+  - Añadir más
+  
+  Sebastián:
+  -Creamos acciones LoginDao a la base de datos
+  -Creamos Modelado Login
+  -Falta añadir la interfaz en fxml
+  Cesar:
+   -Creamos acciones LoginDao a la base de datos
+   -Creamos Modelado Login
+   -Falta añadir la interfaz en fxml
+
+
+
+TO DO:
+  Crear un inicio de sesión para que cada usuario tenga su progreso personalizado (Incluir esto en la base de datos 
+  y en archivo FXLM o front-end donde vayan a hacer la interfaz gráfica. Posteriormente crear su controlador para que 
+  ocurra la acción al momento de abrir la app.

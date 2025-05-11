@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="ui.ProgresoController"
+            prefWidth="800" prefHeight="600"
+            style="-fx-background-color: linear-gradient(to bottom right, #e0eafc, #cfdef3);">
+
+    <VBox alignment="CENTER" spacing="20"
+          AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50"
+          AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50">
+
+        <Label text="📈 Progreso del Usuario"
+               style="-fx-font-size: 26px; -fx-text-fill: #333; -fx-font-weight: bold;" />
+
+        <VBox spacing="10" alignment="CENTER"
+              style="-fx-background-color: white; -fx-background-radius: 12; -fx-border-radius: 12;
+                     -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 4);">
+
+            <TableView fx:id="tablaProgreso" prefHeight="400" prefWidth="700">
+                <columns>
+                    <TableColumn fx:id="colPalabra" text="Palabra en Inglés" prefWidth="175" />
+                    <TableColumn fx:id="colTraduccion" text="Traducción" prefWidth="175" />
+                    <TableColumn fx:id="colCorrecta" text="¿Correcta?" prefWidth="100" />
+                    <TableColumn fx:id="colFecha" text="Fecha" prefWidth="225" />
+                </columns>
+            </TableView>
+
+            <Button text="Volver al menú"
+                    onAction="#volverAlMenu"
+                    style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-size: 14px;
+                           -fx-padding: 8 16 8 16; -fx-background-radius: 8;" />
+        </VBox>
+    </VBox>
+</AnchorPane>
